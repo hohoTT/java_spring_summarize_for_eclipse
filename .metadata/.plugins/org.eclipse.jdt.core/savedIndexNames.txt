@@ -1,0 +1,25 @@
+INDEX VERSION 1.126+C:\Users\Administrator\Desktop\WT\java_spring_summarize_for_eclipse\.metadata\.plugins\org.eclipse.jdt.core
+3283712476.index
+834584462.index
+3790836850.index
+828133061.index
+1877021558.index
+4004133052.index
+1028199574.index
+1604200090.index
+2193799835.index
+3454125809.index
+1836387349.index
+2647782505.index
+4180516235.index
+3598813974.index
+2743915309.index
+1574318262.index
+2338776811.index
+1947431546.index
+3991718231.index
+1065832147.index
+3095963708.index
+1832949699.index
+2486087126.index
+1615693533.index
