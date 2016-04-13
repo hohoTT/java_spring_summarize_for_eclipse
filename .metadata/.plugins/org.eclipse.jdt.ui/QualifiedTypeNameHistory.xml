@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.wt.spring.beans.HelloWorld"/>
+<fullyQualifiedTypeName name="com.wt.spring.beans.Car"/>
 </qualifiedTypeNameHistroy>
