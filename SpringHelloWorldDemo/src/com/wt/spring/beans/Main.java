@@ -20,6 +20,7 @@ public class Main {
 		System.out.println("--------------------------------");
 		
 		// 二、 以下为使用 spring 执行的 hello 的显示效果
+		// 其中 spring 会帮助我们做第一步以及第二步 ，即创建对象以及为对象中的属性赋值
 		
 		// 1. 创建 Spring 的 IOC 容器对象
 		// 创建 IOC 容器会根据配置文件去到每个具体类中，执行构造方法以及 setter 方法
