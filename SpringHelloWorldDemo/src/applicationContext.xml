@@ -32,7 +32,9 @@
 		
 		<constructor-arg index="0" value="hohoTT" type="java.lang.String"></constructor-arg>
 		<constructor-arg index="1" value="QingDao" type="java.lang.String"></constructor-arg>
-		<constructor-arg index="2" value="6666666" type="int"></constructor-arg>
+		<constructor-arg type="int">
+			<value>666888</value>
+		</constructor-arg>
 		
 	</bean>
 
