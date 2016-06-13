@@ -26,6 +26,8 @@
 		
 	</bean>
 	
+	<!-- 若一个 bean 有多个构造器, 如何通过构造器来为 bean 的属性赋值 -->
+	<!-- 可以根据 index 和 value 进行更加精确的定位.一区分重载的构造器！ -->
 	<bean id="car2" class="com.wt.spring.beans.Car">
 		
 		<constructor-arg index="0" value="hohoTT" type="java.lang.String"></constructor-arg>

@@ -27,14 +27,17 @@ public class Main {
 		// 以上即完成赋值的工作
 		
 		// ApplicationContext 代表 spring 中的 IOC 容器，是一个接口
-		// ClassPathXmlApplicationContext ： 是 ApplicationContext 接口的实现类，该实现类从类路径下加载配置文件
+		// ClassPathXmlApplicationContext ： 是 ApplicationContext 接口的实现类，该实现类从类路径下来加载配置文件
 		// 单独的以下这句话，会进行初始化，执行构造方法以及setter方法
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// 2. 从 IOC 容器中获取 Bean 实例
 		// 利用 id 定位到 IOC 容器中的 bean
+		// getBean() 方法为在 applicationContext 的父接口 BeanFactory 中定义的
 		HelloWorld helloWorld_spring = (HelloWorld) applicationContext.getBean("helloWorld");
+		
 		// 利用类型返回 IOC 容器中的 Bean，但是要求 IOC 容器中必须只能有一个给类型的 Bean
+		// 此种方式有欠缺，因为如果在bean的初始化配置时对同一个类配置了两次，在使用此次方式获取Bean就会出错，因为不知道找那个
 //		HelloWorld helloWorld_spring = applicationContext.getBean(HelloWorld.class);
 		
 		// 3. 调用 hello 方法
