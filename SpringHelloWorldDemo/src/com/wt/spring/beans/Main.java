@@ -26,8 +26,9 @@ public class Main {
 		// 创建 IOC 容器会根据配置文件去到每个具体类中，执行构造方法以及 setter 方法
 		// 以上即完成赋值的工作
 		
-		// ApplicationContext 代表 IOC 容器
+		// ApplicationContext 代表 spring 中的 IOC 容器，是一个接口
 		// ClassPathXmlApplicationContext ： 是 ApplicationContext 接口的实现类，该实现类从类路径下加载配置文件
+		// 单独的以下这句话，会进行初始化，执行构造方法以及setter方法
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// 2. 从 IOC 容器中获取 Bean 实例
