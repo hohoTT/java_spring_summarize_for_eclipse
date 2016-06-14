@@ -17,6 +17,8 @@ public class Main {
 		ArithmetiCalculator proxy = new ArithmetiCalculatorLoggingProxy(target)
 				.getLoggingProxy();
 		
+		// 由此可知为一个代理对象
+		System.out.println(proxy.getClass().getName());
 
 		int result = proxy.add(1, 2);
 		System.out.println("result --- " + result);
