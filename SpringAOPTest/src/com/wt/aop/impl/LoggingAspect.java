@@ -48,15 +48,13 @@ import org.springframework.stereotype.Component;
 public class LoggingAspect {
 
 	// 声明该方法是一个前置通知：在目标方法开始之前执行
-	@Before("execution(public int com.wt.aop.impl.ArithmetiCalculator.add(int, int))")
-	public void beforeMethod(){
+	@Before("execution(public int com.wt.aop.impl.ArithmetiCalculator.*(int, int))")
+	public void beforeMethod(JoinPoint joinPoint){
 		
-		System.out.println("The method begins");
+		String methodName = joinPoint.getSignature().getName();
+		Object [] args = joinPoint.getArgs();
 		
-//		String methodName = joinPoint.getSignature().getName();
-//		Object [] args = joinPoint.getArgs();
-//		
-//		System.out.println("The method " + methodName + " begins with " + Arrays.asList(args));
+		System.out.println("The method " + methodName + " begins with " + Arrays.asList(args));
 	}
 	
 //	@After("execution(* com.wt.spring.aop.*.*(..))")

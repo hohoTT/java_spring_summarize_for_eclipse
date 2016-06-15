@@ -19,7 +19,10 @@ public class Main {
 		int result = arithmetiCalculator.add(3, 6);
 
 		System.out.println("^ result --- " + result);
+		
+		result = arithmetiCalculator.div(12, 6);
 
+		System.out.println("^ result --- " + result);
 	}
 
 }

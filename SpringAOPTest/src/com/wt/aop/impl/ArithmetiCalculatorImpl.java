@@ -7,26 +7,26 @@ public class ArithmetiCalculatorImpl implements ArithmetiCalculator {
 
 	@Override
 	public int add(int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = i + j;
+		return result;
 	}
 
 	@Override
 	public int sub(int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = i - j;
+		return result;
 	}
 
 	@Override
 	public int mul(int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = i * j;
+		return result;
 	}
 
 	@Override
 	public int div(int i, int j) {
-		// TODO Auto-generated method stub
-		return 0;
+		int result = i / j;
+		return result;
 	}
 
 }
