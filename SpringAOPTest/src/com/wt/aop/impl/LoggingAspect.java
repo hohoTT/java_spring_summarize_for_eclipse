@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
  * 2. 在 Spring 的配置文件中加入 aop 的命名空间。 
  * 
  * 3. 基于注解的方式来使用 AOP
- * 3.1 在配置文件中配置自动扫描的包: <context:component-scan base-package="com.wt.spring.aop"></context:component-scan>
+ * 3.1 在配置文件中配置自动扫描的包: <context:component-scan base-package="com.wt.aop.impl"></context:component-scan>
  * 3.2 加入使 AspjectJ 注解起作用的配置: <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
  * 为匹配的类自动生成动态代理对象. 
  * 
@@ -32,7 +32,7 @@ import org.springframework.stereotype.Component;
  * 5.1 切面必须是 IOC 中的 bean: 实际添加了 @Component 注解
  * 5.2 声明是一个切面: 添加 @Aspect
  * 5.3 声明通知: 即额外加入功能对应的方法. 
- * 5.3.1 前置通知: @Before("execution(public int com.wt.spring.aop.ArithmeticCalculator.*(int, int))")
+ * 5.3.1 前置通知: @Before("execution(public int com.wt.aop.impl.ArithmetiCalculator.*(int, int))")
  * @Before 表示在目标方法执行之前执行 @Before 标记的方法的方法体. 
  * @Before 里面的是切入点表达式: 
  * 
